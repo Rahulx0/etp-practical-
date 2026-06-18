@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selenium Demo</title>
+</head>
+<body>
+<h1>Selenium Demo</h1>
+<label for="name">Name</label>
+<input id="name" type="text" />
+<button id="submit" type="button">Submit</button>
+<p id="message"></p>
+
+<script>
+    document.getElementById('submit').addEventListener('click', function () {
+        var name = document.getElementById('name').value.trim();
+        document.getElementById('message').textContent = name ? 'Hello, ' + name : 'Hello';
+    });
+</script>
+</body>
+</html>
