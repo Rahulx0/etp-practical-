@@ -33,7 +33,7 @@ class DemoSeleniumTest {
             Path pagePath = Path.of(pageUrl.toURI());
             driver.get(pagePath.toUri().toString());
 
-            assertEquals("Selenium Demo", driver.getTitle());
+            assertEquals("Broken Selenium Demo", driver.getTitle());
 
             WebElement nameInput = driver.findElement(By.id("name"));
             WebElement submitButton = driver.findElement(By.id("submit"));
