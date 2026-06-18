@@ -50,4 +50,4 @@ jobs:
             Please check the logs for the failing test details.
           to: ${{ secrets.EMAIL_TO }}
           from: ${{ secrets.EMAIL_FROM }}
-          secure: true
+          secure: false
